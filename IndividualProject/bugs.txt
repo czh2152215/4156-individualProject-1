@@ -1,0 +1,22 @@
+Course.java
+1. Fixed the return result of getCourseLocation() and getInstructorName() method
+2. Fixed the return result of isCourseFull().
+3. Added @Override annotation to toString() method.
+
+Department.java
+1. Replaced all instances of HashMap with the Map interface.
+2. Added the @Override annotation to the toString() method.
+3. Removed unused import statements.
+
+IndividualProjectApplication.java
+1. Position literals first in String comparisons
+2. Replaced all instances of HashMap with the Map interface.
+
+MyFileDatabase.java
+1. Modified methods that returned null to return an empty Map instead.
+
+RouteController
+1. Modified methods that returned null to return an empty Map instead.
+2. Remove the use of value in annotations when there's only one element.
+3. Use the Locale.ROOT when doing a String.toLowerCase()/toUpperCase() call.
+
