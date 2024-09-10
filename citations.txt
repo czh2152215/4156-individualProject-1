@@ -1,0 +1,11 @@
+1. Code Clean Up: mvn checkstyle:check
+
+2. Test Suite Creation: JaCoCo
+   mvn clean test
+   mvn jacoco:report
+
+3. bug fixing: PMD
+
+
+And for the unit testing part, I use Junit as the unit test tool,
+and use Mockito to mock the environment and data during the test progress
