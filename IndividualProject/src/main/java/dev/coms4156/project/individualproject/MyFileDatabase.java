@@ -21,6 +21,9 @@ public class MyFileDatabase {
    * @param filePath the path to the file containing the entries of the database
    */
   public MyFileDatabase(int flag, String filePath) {
+    if (filePath == null || filePath.isEmpty()) {
+      throw new IllegalArgumentException("File path cannot be null or empty");
+    }
     this.filePath = filePath;
     if (flag == 0) {
       this.departmentMapping = deSerializeObjectFromFile();
@@ -44,7 +47,7 @@ public class MyFileDatabase {
   public Map<String, Department> deSerializeObjectFromFile() {
     try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(filePath))) {
       Object obj = in.readObject();
-      if (obj instanceof HashMap) {
+      if (obj instanceof Map) {
         return (Map<String, Department>) obj;
       } else {
         throw new IllegalArgumentException("Invalid object type in file.");

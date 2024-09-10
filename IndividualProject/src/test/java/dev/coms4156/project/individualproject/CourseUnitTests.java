@@ -1,12 +1,13 @@
 package dev.coms4156.project.individualproject;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * course unit tests.
@@ -30,7 +31,7 @@ public class CourseUnitTests {
   public void testGetInstructorName() {
     String expectedResult = "Griffin Newbold";
     String actualResult = testCourse.getInstructorName();
-    assertEquals("Griffin Newbold", testCourse.getInstructorName());
+    assertEquals(expectedResult, actualResult);
   }
 
   @Test

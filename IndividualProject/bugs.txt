@@ -7,6 +7,9 @@ Department.java
 1. Replaced all instances of HashMap with the Map interface.
 2. Added the @Override annotation to the toString() method.
 3. Removed unused import statements.
+4. Fixed the return result of getNumberOfMajors(), getDepartmentChair() and toString() methods
+5. For dropPersonFromMajor(), before drop the person, check numberOfMajors is greater than 0 first.
+
 
 IndividualProjectApplication.java
 1. Position literals first in String comparisons
@@ -14,9 +17,11 @@ IndividualProjectApplication.java
 
 MyFileDatabase.java
 1. Modified methods that returned null to return an empty Map instead.
+2. Add file path check in the Constructor
 
 RouteController
 1. Modified methods that returned null to return an empty Map instead.
 2. Remove the use of value in annotations when there's only one element.
 3. Use the Locale.ROOT when doing a String.toLowerCase()/toUpperCase() call.
-
+4. Remove unused local variables
+5. Fix the return HttpStatus in retrieveDepartment(), retrieveCourse(), isCourseFull() and handleException() methods
