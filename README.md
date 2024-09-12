@@ -5,6 +5,7 @@ Zihao Cui zc2715
 Because I had already fixed the bugs in Course.java before I ran PMD, the results from running PMD will be missing some of the results from Course.java.
 ## bug finder: PMD
 
+## bug finder commands: pmd check -d D:\GitHub\4156-individualProject-1\IndividualProject -R rulesets/java/quickstart.xml -f text
 
 ## bug finder result:
 D:\GitHub\4156-individualProject-1\IndividualProject\src\main\java\dev\coms4156\project\individualproject\Course.java:70:       MissingOverride:        The method 'toString()' is missing an @Override annotation.
